@@ -1,0 +1,9 @@
+C:\Users\Cristopher\source\repos\Escenarios\bin\Debug\netcoreapp3.1\Escenarios.deps.json
+C:\Users\Cristopher\source\repos\Escenarios\bin\Debug\netcoreapp3.1\Escenarios.dll
+C:\Users\Cristopher\source\repos\Escenarios\bin\Debug\netcoreapp3.1\Escenarios.pdb
+C:\Users\Cristopher\source\repos\Escenarios\obj\Debug\netcoreapp3.1\Escenarios.csprojAssemblyReference.cache
+C:\Users\Cristopher\source\repos\Escenarios\obj\Debug\netcoreapp3.1\Escenarios.AssemblyInfoInputs.cache
+C:\Users\Cristopher\source\repos\Escenarios\obj\Debug\netcoreapp3.1\Escenarios.AssemblyInfo.cs
+C:\Users\Cristopher\source\repos\Escenarios\obj\Debug\netcoreapp3.1\Escenarios.csproj.CoreCompileInputs.cache
+C:\Users\Cristopher\source\repos\Escenarios\obj\Debug\netcoreapp3.1\Escenarios.dll
+C:\Users\Cristopher\source\repos\Escenarios\obj\Debug\netcoreapp3.1\Escenarios.pdb

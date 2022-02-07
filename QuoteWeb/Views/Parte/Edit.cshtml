@@ -1,0 +1,38 @@
+﻿@using Modelos.Quote
+@model Parte
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3> Editar el cliente </h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10">
+            <form method="post" asp-action="Edit">
+
+                <input type="hidden" asp-for="ParteId" />
+
+                <div class="form-group">
+                    <label class="control-label">Nombre</label>
+                    <input class="form-control" asp-for="Nombre" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Stock</label>
+                    <input class="form-control" asp-for="Stock" />
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Actualizar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

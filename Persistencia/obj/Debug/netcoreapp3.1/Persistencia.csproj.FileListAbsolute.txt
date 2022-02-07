@@ -1,0 +1,17 @@
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\ef.dll.config
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Persistencia.dll.config
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Persistencia.deps.json
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Persistencia.runtimeconfig.json
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Persistencia.runtimeconfig.dev.json
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Persistencia.dll
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Persistencia.pdb
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Modelos.dll
+C:\Users\Cristopher\source\repos\Persistencia\bin\Debug\netcoreapp3.1\Modelos.pdb
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.csprojAssemblyReference.cache
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.AssemblyInfoInputs.cache
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.AssemblyInfo.cs
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.csproj.CopyComplete
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.dll
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.pdb
+C:\Users\Cristopher\source\repos\Persistencia\obj\Debug\netcoreapp3.1\Persistencia.genruntimeconfig.cache

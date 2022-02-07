@@ -1,0 +1,81 @@
+﻿@using Modelos.Quote
+@model IEnumerable<Quote>
+
+    @{
+        ViewData["Title"] = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h1>Proformas</h1>
+    <p>Se presenta la lista de Proformas(Quotes) </p>
+
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["mensaje"]
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Lista de Proformas</h3>
+            </div>
+
+
+            <div class="col-sm-6">
+                <a class="btn btn-success d-block" asp-controller="Quote" asp-action="Create">
+                    Crear una proforma
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            @if (Model.Count() > 0)
+            {
+                <table class=" table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <td>QuoteId</td>
+                            <td>Nombre Cliente</td>
+                            <td>Fecha</td>
+                            <td>KitId</td>
+                            <td>Kit</td>
+                            <td>Estado</td>
+
+                            <td>Acciones</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Quote quote in Model)
+                        {
+                        <tr>
+                            <td>@quote.QuoteId</td>
+                            <td>@quote.Cliente.Nombre</td>
+                            <td>@quote.Fecha</td>
+                            <td>@quote.KitId</td>
+                            <td>@quote.kit.Nombre</td>
+                            <td>@quote.Estado.EstadoValor</td>
+                            <td>
+                                <center>
+                                    <a class="btn btn-warning"
+                                       asp-controller="Cliente" asp-action="Edit" asp-route-id="@quote.QuoteId">
+                                        Editar
+                                    </a>
+                                    <a class="btn btn-danger"
+                                       asp-controller="Cliente" asp-action="Delete" asp-route-id="@quote.QuoteId">
+                                        Borrar
+                                    </a>
+                                </center>
+                            </td>
+                        </tr>
+                        }
+
+                    </tbody>
+                </table>
+            }
+            <div class="col-sm-6">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Salir</a>
+                
+            </div>
+        </div>
+    </div>
+

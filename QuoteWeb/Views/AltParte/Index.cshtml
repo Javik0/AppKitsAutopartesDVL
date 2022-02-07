@@ -1,0 +1,80 @@
+﻿@using Modelos.Quote
+@model IEnumerable<AltParte>
+    @{
+        ViewData["Title"] = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h1>Partes Alternas</h1>
+    <p>Se presenta las partes alternas de la proforma</p>
+
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["mensaje"]
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Lista de partes alternas</h3>
+            </div>
+
+
+            <div class="col-sm-6">
+                <a class="btn btn-success d-block" asp-controller="AltParte" asp-action="Create">
+                    Crear una parte alterna
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            @if (Model.Count() > 0)
+            {
+                <table class=" table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <td>Id Parte</td>
+                            <td>Nombre Parte</td>
+                            <td>Id parte alterna</td>
+                            <td>Nombre parte alterna</td>
+                            <td>Stock parte alterna</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (AltParte altparte in Model)
+                        {
+                        <tr>
+                            <td>@altparte.ParteId</td>
+                            <td>@altparte.Parte.Nombre</td>
+                            <td>@altparte.ParteAlternaId</td>
+                            <td>@altparte.ParteAlterna.Nombre</td>
+                            <td>@altparte.ParteAlterna.Stock</td>
+
+
+
+                            <td>
+                                <center>
+                                    <a class="btn btn-warning"
+                                       asp-controller="AltParte" asp-action="Edit" asp-route-id="@altparte.ParteAlternaId">
+                                        Editar
+                                    </a>
+                                    <a class="btn btn-danger"
+                                       asp-controller="AltParte" asp-action="Delete" asp-route-id="@altparte.ParteAlternaId">
+                                        Borrar
+                                    </a>
+                                </center>
+                            </td>
+                        </tr>
+                        }
+
+                    </tbody>
+                </table>
+            }
+            <div class="col-sm-6">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Salir</a>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
